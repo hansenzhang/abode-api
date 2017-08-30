@@ -15,155 +15,44 @@ This library uses [axios](https://github.com/mzabriskie/axios) to send HTTP requ
 Begin by initializing with your username and password. 
 
 ```javascript
-let clientsuccess = require('clientsuccess-api').clientsuccess(username, password);
-```
+let abode = require('abode-api').abode(username, password);
 
-Now you will be able to interact with the Client Success API. This API will handle refreshing your access token.
-Client Success [reccomends](http://help.clientsuccess.com/advanced-features/does-clientsuccess-have-an-api) that you create a seperate user account named "API Access"
-
-```javascript
-clientsuccess.clients.list()
+abode.mode.status()
   .then(response => console.log(response))
   .catch(err => console.log(err));
 ```
 
 ## Methods
 
-### Clients
+### Modes
 
-#### List 
+
+#### Home 
 ```javascript
-clientsuccess.clients.list(params)
-```
-#### Create
-```javascript
-clientsuccess.clients.create(params)
-```
-#### Read
-```javascript
-clientsuccess.clients.read(clientId, params)
-```
-#### Update
-```javascript
-clientsuccess.clients.update(clientId, params)
-```
-#### Delete
-```javascript
-clientsuccess.clients.delete(clientId, params)
+abode.mode.home()
 ```
 
-### Contacts
-
-#### List
+#### Away
 ```javascript
-clientsuccess.contacts.list(clientId, params)
-```
-#### Create
-```javascript
-clientsuccess.contacts.create(clientId, params)
-```
-#### Read
-```javascript
-clientsuccess.contacts.read(clientId, contactId, params)
-```
-#### Delete
-```javascript
-clientsuccess.contacts.delete(clientId, contactId, params)
+abode.mode.away()
 ```
 
-### Contact Custom Fields
+#### Standby
 ```javascript
-clientsuccess.contactCustomFields(params)
+abode.mode.standby()
 ```
 
-### Interactions
-
-#### List
+### Panel
 ```javascript
-clientsuccess.interactions.list(clientId, params)
-```
-#### Create
-```javascript
-clientsuccess.interactions.create(clientId, params)
-```
-#### Update
-```javascript
-clientsuccess.interactions.update(clientId, interactionId, params)
-```
-#### Delete
-```javascript
-clientsuccess.interactions.delete(clientId, interactionId, params)
+abode.mode.panel()
 ```
 
-### Todos
-
-#### List
+### Devices
 ```javascript
-clientsuccess.todos.list(clientId, params)
-```
-#### Create
-```javascript
-clientsuccess.todos.create(clientId, params)
-```
-#### Update
-```javascript
-clientsuccess.todos.read(clientId, todoId, params)
-```
-#### Delete
-```javascript
-clientsuccess.todos.delete(clientId, todoId, params)
+abode.mode.devices()
 ```
 
-### Pulses
-
-#### List
+### Associates
 ```javascript
-clientsuccess.pulses.list(clientId, params)
-```
-#### Create
-```javascript
-clientsuccess.pulses.create(clientId, params)
-```
-
-### Employees
-```javascript
-clientsuccess.employees(params)
-```
-
-### Products
-
-#### List
-```javascript
-clientsuccess.products.list(params)
-```
-#### Create
-```javascript
-clientsuccess.products.create(params)
-```
-#### Read
-```javascript
-clientsuccess.products.read(productId, params)
-```
-#### Update
-```javascript
-clientsuccess.products.update(productId, params)
-```
-#### Delete
-```javascript
-clientsuccess.products.delete(productId, params)
-```
-
-### Client Types
-```javascript
-clientsuccess.clientTypes(params)
-```
-
-### Client Statuses
-```javascript
-clientsuccess.clientStatuses(params)
-```
-
-### Subscriptions
-```javascript
-clientsuccess.subscriptions(params)
+abode.mode.associates()
 ```
