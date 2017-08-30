@@ -1,11 +1,9 @@
-# Client Success
-A 3rd party node.js library that implements the [ClientSuccess](https://www.clientsuccess.com/) API.
-
-[Documentation](http://docs.clientsuccessapi.apiary.io/#reference)
+# Abode Api
+A 3rd party node.js library that implements the [Abode](https://www.goabode.com/) API.
 
 ## Instalation
 ```bash
-npm i clientsuccess-api
+npm i abode-api
 ```
 
 ## Usage
