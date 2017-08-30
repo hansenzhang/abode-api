@@ -1,0 +1,29 @@
+{
+  "name": "clientsuccess-api",
+  "version": "1.0.0",
+  "description": "A third-party Javascript wrapper for ClientSuccess's REST API.",
+  "main": "./lib",
+  "scripts": {
+    "lint": "scripts/lint.sh"
+  },
+  "author": {
+    "name": "Harrison Beckerich",
+    "email": "hbeckerich@torchlite.com"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "repository": "https://github.com/torchlite/clientsuccess-api.git",
+  "dependencies": {
+    "axios": "0.16.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "7.2.3",
+    "dotenv": "4.0.0",
+    "eslint": "3.19.0"
+  }
+}
